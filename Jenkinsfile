@@ -13,7 +13,7 @@ git branch: 'main', url:
 stage('Docker Build'){
 	steps{
 		script{
-			if(fileExits('Dockerfile')){
+			if(fileExists('Dockerfile')){
 			sh "docker build -t ${env.DOCKER_IMAGE} ."
 							}
 			else{
