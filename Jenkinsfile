@@ -12,7 +12,7 @@ git branch: 'main', url:
 }
 stage('Docker Build'){
 	steps{
-		sript{
+		script{
 			if(fileExits('Dockerfile')){
 			sh "docker build -t ${env.DOCKER_IMAGE} ."
 							}
