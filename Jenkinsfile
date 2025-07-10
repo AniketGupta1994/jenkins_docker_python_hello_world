@@ -6,7 +6,7 @@ DOCKER_IMAGE = 'hello-world-python:latest' // Docker image
 stages {
 stage ('Checkout') {
 steps {
-git branch: "main', url:
+git branch: 'main', url:
 'https://github.com/AniketGupta1994/jenkins_docker_python_hello_world.git'
 }
 }
